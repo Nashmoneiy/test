@@ -1,5 +1,10 @@
 [phases.setup]
-nixPkgs = ["php83", "composer", "git", "nodejs_latest"]
+nixPkgs = ["php83", "git", "nodejs_latest"]
+nixpkgsOverlay = '''
+  self: super: {
+    composer = super.php.packages.composer;
+  }
+'''
 
 [phases.install]
 cmd = "composer install --no-dev --optimize-autoloader"
