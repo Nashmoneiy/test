@@ -1,5 +1,4 @@
-[providers]
-php = "custom"
+providers = ["php"]
 
 [phases.setup]
 nixPkgs = ["php83", "git", "nodejs_latest"]
