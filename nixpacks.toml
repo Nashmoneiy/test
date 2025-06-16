@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["php83", "php83Packages.composer", "git", "nodejs_latest"]
+nixPkgs = ["php83", "php83Packages.composer", "git"]
 
 [phases.install]
 cmd = """
