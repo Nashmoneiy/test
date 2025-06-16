@@ -1,3 +1,6 @@
+[providers]
+php = "custom"
+
 [phases.setup]
 nixPkgs = ["php83", "git", "nodejs_latest"]
 
