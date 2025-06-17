@@ -24,8 +24,8 @@ class Product extends Model
         'quantity',
         'category_id'
     ];
-    protected $with = ['category'];
-    public function category() {
+    protected $with = ['categories'];
+    public function categories() {
         return $this->belongsTo(Category::class, 'category_id', 'id');
     }
 }
