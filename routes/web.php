@@ -18,7 +18,3 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-
-Route::get('/payment/callback', [CategoryController::class, 'handleCallback'])->name('payment.callback');
-
